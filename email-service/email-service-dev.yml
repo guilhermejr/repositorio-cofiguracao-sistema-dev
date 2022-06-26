@@ -1,0 +1,19 @@
+
+server:
+  port: 9003
+
+spring:
+  main:
+    banner-mode: off
+  kafka:
+    bootstrap-servers: localhost:9092
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: guilhermejr.trabalho@gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

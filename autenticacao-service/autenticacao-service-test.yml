@@ -1,0 +1,21 @@
+
+server:
+  port: 9002
+  servlet:
+    context-path: '/autenticacao-service/'
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/autenticacao-test
+    username: postgres
+    password: Postgres2018!
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        integration:
+          envers:
+            enabled: false

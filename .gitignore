@@ -1,0 +1,6 @@
+.DS_Store
+application-prod.yml
+autenticacao-service/autenticacao-service-prod.yml
+energia-service/energia-service-prod.yml
+email-service/email-service-prod.yml
+remedios-service/remedios-service-prod.yml
