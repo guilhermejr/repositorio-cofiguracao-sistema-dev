@@ -19,3 +19,7 @@ spring:
         integration:
           envers:
             enabled: false
+
+sistema:
+  nfe-ba-service:
+    url: http://localhost:8000
