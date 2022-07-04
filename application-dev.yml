@@ -13,15 +13,16 @@ management:
 
 sistema:
   eureka:
-    login: eureka
-    senha: mMnsilmomkq0bFiktR 
+    host: ${eurekaServerHost}
+    login: ${eurekaServerUser}
+    senha: ${eurekaServerPass}
   auth:
-    jwtSecret: w!z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)H@McQfTjWmZq
+    jwtSecret: ${JWTSecret}
     jwtExpirationMs: 14400000
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: 'http://${sistema.eureka.login}:${sistema.eureka.senha}@localhost:8761/eureka'
+      defaultZone: 'http://${sistema.eureka.login}:${sistema.eureka.senha}@${sistema.eureka.host}:8761/eureka'
   instance:
-    hostname: localhost
+    hostname: ${sistema.eureka.host}

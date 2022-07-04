@@ -6,11 +6,12 @@ spring:
   main:
     banner-mode: off
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${kafkaHost}:9092
   mail:
-    host: smtp.gmail.com
+    host: ${emailHost}
     port: 587
-    username: guilhermejr.trabalho@gmail.com
+    username: ${emailUser}
+    password: ${emailPass}
     properties:
       mail:
         smtp:

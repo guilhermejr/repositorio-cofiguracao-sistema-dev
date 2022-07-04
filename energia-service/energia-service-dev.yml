@@ -9,9 +9,9 @@ spring:
     banner-mode: off
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/energia
-    username: postgres
-    password: Postgres2018!
+    url: jdbc:postgresql://${energiaDBHost}:5432/${energiaDBBase}
+    username: ${energiaDBUser}
+    password: ${energiaDBPass}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true

@@ -9,9 +9,9 @@ spring:
     banner-mode: off
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/autenticacao
-    username: postgres
-    password: Postgres2018!
+    url: jdbc:postgresql://${autenticacaoDBHost}:5432/${autenticacaoDBBase}
+    username: ${autenticacaoDBUser}
+    password: ${autenticacaoDBPass}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
@@ -28,4 +28,4 @@ spring:
             store_data_at_delete: true
             default_schema: auditoria
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${kafkaHost}:9092

@@ -9,9 +9,9 @@ spring:
     banner-mode: off
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/supermercado
-    username: postgres
-    password: Postgres2018!
+    url: jdbc:postgresql://${supermercadoDBHost}:5432/${supermercadoDBBase}
+    username: ${supermercadoDBUser}
+    password: ${supermercadoDBPass}
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
@@ -30,4 +30,4 @@ spring:
 
 sistema:
   nfe-ba-service:
-    url: http://localhost:8000
+    url: http://${NFEBAHost}:8000
