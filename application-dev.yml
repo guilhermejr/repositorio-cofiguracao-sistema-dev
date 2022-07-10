@@ -18,7 +18,7 @@ sistema:
     senha: ${eurekaServerPass}
   auth:
     jwtSecret: ${JWTSecret}
-    jwtExpirationMs: 1440000000000
+    jwtExpirationMs: 14400000
 
 eureka:
   client:
