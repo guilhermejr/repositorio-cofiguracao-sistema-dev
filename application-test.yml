@@ -19,6 +19,9 @@ sistema:
   auth:
     jwtSecret: ${JWTSecret}
     jwtExpirationMs: 1440000000000
+  swagger:
+    login: ${swaggerUser}
+    senha: ${swaggerPass}
 
 eureka:
   client:
